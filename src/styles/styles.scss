@@ -105,5 +105,37 @@ header {
         width: 436px;
       }
     }
+    .side-image {
+      width: 260px;
+      position: absolute;
+      @media (max-width: 1440px) {
+        width: 208px;
+      }
+      &,
+      left {
+        left: 168px;
+        top: 12px;
+        @media (max-width: 1440px) {
+          left: 208px;
+        }
+      }
+      &,
+      right {
+        right: 168px;
+        bottom: 12px;
+        @media (max-width: 1440px) {
+          right: 208px;
+        }
+      }
+    }
+  }
+  .scroll {
+    font-weight: 700;
+    font-size: 0.875rem;
+    letter-spacing: 1.5px;
+    color: $black;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 48px;
   }
 }
