@@ -47,6 +47,7 @@ const Banner = () => {
           <span>Scroll down</span>
         </div>
       </div>
+      <div className="fixed-misc">Omar Miah Portfolio</div>
     </div>
   )
 }

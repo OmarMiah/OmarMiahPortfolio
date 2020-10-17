@@ -11,6 +11,8 @@ html,
 body {
   font-family: $font;
   font-size: 16px;
+  padding: 0;
+  margin: 0;
 }
 
 .container {
@@ -99,30 +101,30 @@ header {
       }
     }
     .main-image {
-      width: 536px;
+      width: 500px;
       margin: 0 auto;
       @media (max-width: 1440px) {
-        width: 436px;
+        width: 300px;
       }
     }
     .side-image {
       width: 260px;
+      bottom: 12px;
       position: absolute;
       @media (max-width: 1440px) {
-        width: 208px;
+        width: 300px;
       }
-      &,
-      left {
-        left: 168px;
-        top: 12px;
+      &.left {
+        left: 260px;
+        top: 15px;
         @media (max-width: 1440px) {
-          left: 208px;
+          left: 300px;
         }
       }
-      &,
-      right {
-        right: 168px;
-        bottom: 12px;
+      &.right {
+        right: 100px;
+        bottom: 0px;
+        top: 0px;
         @media (max-width: 1440px) {
           right: 208px;
         }
@@ -137,5 +139,21 @@ header {
     text-transform: uppercase;
     position: absolute;
     bottom: 48px;
+  }
+  .fixed-misc {
+    position: fixed;
+    top: 50%;
+    right: -48px;
+    transform: rotate(-90deg);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    letter-spacing: 1.5px;
+    color: $white;
+    mix-blend-mode: difference;
+    z-index: 8;
+    @media (max-width: 1440px) {
+      right: -25px;
+    }
   }
 }
