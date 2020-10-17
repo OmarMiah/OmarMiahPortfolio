@@ -32,9 +32,19 @@ const AboutBlurb = () => {
             <div className="btn-row">
               <Link to="/work">view series </Link>
             </div>
+            <div className="images">
+              <div className="top-right">
+                <Img fluid={data.astro.childImageSharp.fluid} />
+              </div>
+              <div className="bottom-left">
+                <Img fluid={data.naut.childImageSharp.fluid} />
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <div className="black-box"></div>
+      <div className="black-box overlay"></div>
     </div>
   )
 }
