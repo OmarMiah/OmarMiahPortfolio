@@ -210,12 +210,38 @@ header {
           top: 0px;
           right: 0px;
           z-index: 4;
+          @media (max-width: 1440px) {
+            width: 360px;
+          }
         }
         .bottom-left {
+          position: absolute;
+          width: 410px;
+          left: 0;
+          bottom: 0;
+          @media (max-width: 1440px) {
+            width: 310px;
+          }
         }
       }
     }
   }
   .black-box {
+    background: $black;
+    height: 418px;
+    width: 836px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    @media (max-width: 1440px) {
+      width: 636px;
+      height: 340px;
+    }
+    &.overlay {
+      z-index: 7;
+      background: $maroon;
+      mix-blend-mode: overlay;
+    }
   }
 }
